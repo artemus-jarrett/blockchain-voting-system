@@ -1,0 +1,179 @@
+.showcoinDivWrapped {
+  width: 100%;
+  max-width: 1200px;
+  margin: var(--space-lg) auto;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(143, 132, 201, 0.4), rgba(111, 146, 184, 0.34));
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-panel);
+}
+
+.showcoinDiv {
+  width: 100%;
+  padding: var(--space-xl) var(--space-md);
+  padding-top: 64px;
+  background: linear-gradient(168deg, rgba(34, 34, 46, 0.96) 0%, rgba(18, 18, 28, 0.99) 100%);
+  border-radius: calc(var(--radius-xl) - 2px);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-chrome);
+  box-shadow: var(--surface-inset-top), inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.diamondWrappedDiv {
+  position: absolute;
+  top: -14px;
+  left: var(--space-lg);
+  height: 48px;
+  min-width: 140px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(143, 132, 201, 0.4), rgba(111, 146, 184, 0.34));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diamondDiv {
+  height: 100%;
+  width: 100%;
+  padding: 0 var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(36, 36, 48, 0.98) 0%, rgba(24, 24, 34, 1) 100%);
+  border-radius: calc(var(--radius-lg) - 2px);
+  color: var(--text-primary);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.diamondDiv span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.voteBtnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voteBtnWrapped {
+  height: 40px;
+  min-width: 100px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(143, 132, 201, 0.4), rgba(111, 146, 184, 0.34));
+  border-radius: var(--radius-md);
+}
+
+.voteBtn {
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--space-md);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: linear-gradient(180deg, rgba(36, 36, 48, 0.98) 0%, rgba(22, 22, 32, 1) 100%);
+  border: none;
+  border-radius: calc(var(--radius-md) - 2px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: background var(--transition);
+}
+
+.voteBtn:hover {
+  background: var(--accent-surface-strong);
+  color: var(--text-primary);
+}
+
+.logoImgDiv {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImgDiv img {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.wlImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: var(--radius-sm);
+  transition: background var(--transition);
+}
+
+.wlImgDiv:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.wlImg {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.tierImgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tierImgDiv img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.loadingDiv {
+  width: 100%;
+  min-height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingDiv img {
+  width: 80px;
+  height: 80px;
+  opacity: 0.7;
+}
+
+.showcoinDivWrapped .MuiPaper-root {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1600px) {
+  .showcoinDiv {
+    overflow-x: auto;
+    padding-top: 56px;
+  }
+
+  .diamondWrappedDiv {
+    height: 40px;
+    min-width: 120px;
+    top: -12px;
+  }
+
+  .diamondDiv span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .loadingDiv {
+    min-height: 180px;
+  }
+
+  .loadingDiv img {
+    width: 56px;
+    height: 56px;
+  }
+}
