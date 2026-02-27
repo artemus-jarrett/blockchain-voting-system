@@ -1,0 +1,191 @@
+.walletLoginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl) var(--space-md);
+  background: radial-gradient(ellipse 90% 70% at 50% 0%, rgba(120, 110, 180, 0.12) 0%, transparent 55%),
+    var(--bg-primary);
+}
+
+.walletLoginCard {
+  width: 100%;
+  max-width: 420px;
+  padding: var(--space-xl);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(168deg, rgba(34, 34, 46, 0.96) 0%, rgba(18, 18, 28, 0.99) 100%);
+  border: 1px solid var(--border-chrome);
+  box-shadow: var(--shadow-panel);
+  text-align: center;
+}
+
+.walletLoginLogo {
+  margin-bottom: var(--space-md);
+}
+
+.walletLoginLogo img {
+  max-height: 44px;
+  width: auto;
+}
+
+.walletLoginTitle {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.walletLoginSubtitle {
+  margin: 0 0 var(--space-lg);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.walletLoginHint {
+  margin: 0 0 var(--space-lg);
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.walletLoginButtons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.walletLoginSlots {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.walletSlot {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-xs);
+  text-align: left;
+}
+
+.walletSlotLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.walletSlotDownload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 var(--space-md);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-start);
+  text-decoration: none;
+  border: 1px solid var(--border-chrome);
+  border-radius: var(--radius-lg);
+  background: rgba(8, 8, 12, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.walletSlotDownload:hover {
+  border-color: var(--border-accent);
+  color: var(--text-primary);
+  background: var(--accent-surface);
+}
+
+.walletLoginGroupLabel {
+  margin: var(--space-sm) 0 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: left;
+}
+
+.walletLoginGroupLabel:first-child {
+  margin-top: 0;
+}
+
+.walletLoginBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  width: 100%;
+  min-height: 48px;
+  padding: 0 var(--space-md);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: linear-gradient(180deg, rgba(36, 36, 48, 0.98) 0%, rgba(22, 22, 32, 1) 100%);
+  border: 1px solid var(--border-chrome);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+}
+
+.walletLoginBtn:hover:not(:disabled) {
+  border-color: var(--border-accent);
+  transform: translateY(-1px);
+}
+
+.walletLoginBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.walletLoginBtnBusy {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.walletLoginEmpty {
+  padding: var(--space-md);
+  font-size: 14px;
+  color: var(--text-muted);
+  border: 1px dashed var(--border-chrome);
+  border-radius: var(--radius-md);
+}
+
+.walletLoginLinks {
+  margin-top: var(--space-lg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.walletLoginLinks a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-start);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.walletLoginSpinner {
+  width: 40px;
+  height: 40px;
+  margin: var(--space-lg) auto;
+  border: 3px solid var(--border-subtle);
+  border-top-color: var(--accent-start);
+  border-radius: 50%;
+  animation: walletLoginSpin 0.75s linear infinite;
+}
+
+@keyframes walletLoginSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
