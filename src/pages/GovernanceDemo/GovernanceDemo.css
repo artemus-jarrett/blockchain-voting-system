@@ -1,0 +1,302 @@
+.govPage {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: var(--space-xl);
+}
+
+.govHero {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.govEyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.govHero h1 {
+  margin: 0 0 var(--space-sm);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.govLead {
+  margin: 0 auto var(--space-lg);
+  max-width: 560px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.govHeroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.govBtnPrimary,
+.govBtnGhost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 var(--space-lg);
+  border-radius: var(--radius-lg);
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+}
+
+.govBtnPrimary {
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--accent-surface-strong), var(--accent-surface));
+  border: 1px solid var(--border-accent);
+  box-shadow: none;
+}
+
+.govBtnPrimary:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, rgba(143, 132, 201, 0.28), rgba(111, 146, 184, 0.2));
+  border-color: rgba(148, 138, 205, 0.5);
+}
+
+.govBtnGhost {
+  color: var(--text-secondary);
+  background: rgba(10, 10, 14, 0.45);
+  border: 1px solid var(--border-chrome);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.govBtnGhost:hover {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(28, 28, 38, 0.55);
+}
+
+.govGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+@media (max-width: 800px) {
+  .govGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.govCard {
+  background: linear-gradient(168deg, rgba(34, 34, 46, 0.94) 0%, rgba(22, 22, 32, 0.98) 100%);
+  border: 1px solid var(--border-chrome);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-panel);
+}
+
+.govCard h2 {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.govCard p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.govTag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.govSection {
+  margin-bottom: var(--space-xl);
+}
+
+.govSectionTitle {
+  margin: 0 0 var(--space-xs);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.govSectionDesc {
+  margin: 0 0 var(--space-lg);
+  color: var(--text-secondary);
+  font-size: 14px;
+  max-width: 640px;
+}
+
+.stakingCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .stakingCard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stakingMetrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.metric {
+  background: linear-gradient(180deg, rgba(26, 26, 36, 0.9) 0%, rgba(16, 16, 24, 0.95) 100%);
+  border: 1px solid var(--border-chrome);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.metricLabel {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-xs);
+}
+
+.metricValue {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.metricHint {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: var(--space-xs);
+}
+
+.stakingNote {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: var(--space-md);
+  line-height: 1.5;
+}
+
+.weightedDemo label {
+  display: block;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.weightedDemo input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent-start);
+}
+
+.weightedOut {
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(26, 26, 36, 0.85) 0%, rgba(14, 14, 22, 0.92) 100%);
+  border: 1px solid var(--border-chrome);
+  border-left: 3px solid rgba(148, 138, 205, 0.55);
+  font-size: 14px;
+  color: var(--text-secondary);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.weightedOut strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.weightedFormula {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: var(--space-sm);
+}
+
+.rcDemo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.rcRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-md);
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  background: linear-gradient(180deg, rgba(26, 26, 36, 0.85) 0%, rgba(16, 16, 24, 0.92) 100%);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-chrome);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.rcRow span {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.rcRow select {
+  min-width: 120px;
+  height: 40px;
+  padding: 0 var(--space-sm);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-chrome);
+  background: rgba(12, 12, 18, 0.6);
+  color: var(--text-primary);
+  font-size: 14px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.rcSummary {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.rcSummary strong {
+  color: var(--text-primary);
+}
+
+.pillRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.pill {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--accent-surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-chrome);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}

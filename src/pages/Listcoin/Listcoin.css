@@ -1,0 +1,279 @@
+.listCoinDiv {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  display: flex;
+  justify-content: center;
+}
+
+.listCoinDivWrap {
+  width: 100%;
+  background: linear-gradient(168deg, rgba(34, 34, 46, 0.96) 0%, rgba(18, 18, 28, 0.99) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-chrome);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-panel);
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.listHeader img {
+  height: 48px;
+  width: auto;
+}
+
+.listHeader span {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.uploadImgDivWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  margin-bottom: var(--space-lg);
+}
+
+.openFolderImg {
+  --size: 160px;
+  display: flex;
+  flex-direction: column;
+  width: var(--size);
+  gap: var(--space-sm);
+}
+
+.openFolderImg .titleInput {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.openFolderImg img {
+  width: var(--size);
+  height: var(--size);
+  border: 2px dashed var(--border-subtle);
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.openFolderImg img:hover {
+  border-color: var(--accent-start);
+  background: rgba(143, 132, 201, 0.06);
+}
+
+.openFolderImg label {
+  cursor: pointer;
+}
+
+.uploadFile {
+  display: none;
+}
+
+.getListedCoin {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getListedCoin img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.listingNormalDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-md);
+  gap: var(--space-xs);
+}
+
+.titleInput {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.listingInput,
+.listingInputDescription {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-size: 15px;
+  color: var(--text-primary);
+  background: rgba(10, 10, 14, 0.55);
+  border: 1px solid var(--border-chrome);
+  border-radius: var(--radius-md);
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color var(--transition);
+}
+
+.listingInput:hover,
+.listingInput:focus,
+.listingInputDescription:hover,
+.listingInputDescription:focus {
+  border-color: var(--accent-start);
+}
+
+.listingInputDescription {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.radioDiv {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-top: var(--space-sm);
+}
+
+.radioDiv label {
+  color: var(--text-primary);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radioDiv img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.listingCheckboxDiv {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.listingCheckboxDiv input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-start);
+  cursor: pointer;
+}
+
+.listingCheckboxDiv .whiteSpan {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.listingCheckboxDiv .redSpan {
+  color: var(--accent-start);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.listingBtnDiv {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: flex-end;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.listingBtnDiv button {
+  min-width: 120px;
+  padding: var(--space-sm) var(--space-lg);
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.listingBtnDiv button:hover {
+  border-color: var(--accent-start);
+  background: rgba(143, 132, 201, 0.1);
+}
+
+.listingBtnDiv #submitBtn {
+  background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+  border: none;
+  color: white;
+}
+
+.listingBtnDiv #submitBtn:hover {
+  box-shadow: 0 4px 20px var(--accent-glow);
+  opacity: 0.95;
+}
+
+.react-datepicker__input-container input {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  font-size: 15px;
+  width: 100%;
+}
+
+.react-datepicker__input-container input:hover,
+.react-datepicker__input-container input:focus {
+  border-color: var(--accent-start);
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  .listCoinDivWrap {
+    padding: var(--space-lg);
+  }
+
+  .listHeader span {
+    font-size: 1.5rem;
+  }
+
+  .openFolderImg {
+    --size: 140px;
+  }
+
+  .getListedCoin img {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .listCoinDivWrap {
+    padding: var(--space-md);
+  }
+
+  .listHeader {
+    flex-direction: column;
+  }
+
+  .listHeader span {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .getListedCoin {
+    display: none;
+  }
+
+  .listingBtnDiv {
+    flex-direction: column;
+  }
+
+  .listingBtnDiv button {
+    width: 100%;
+  }
+}
